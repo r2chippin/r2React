@@ -3,3 +3,7 @@
 Welcome to the r2React repository! 
 
 This repository is created for learning and practicing React.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
