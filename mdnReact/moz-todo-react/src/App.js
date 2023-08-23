@@ -4,16 +4,17 @@ import Todo from "./components/Todo";
 import Form from "./components/Form";
 import FilterButton from "./components/FilterButton";
 
-
-
+// App
 function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
 
+  // add newTask to tasks
   function addTask(name) {
     const newTask = { id: `todo-${nanoid()}`, name, completed: false };
     setTasks([...tasks, newTask]);
   }
 
+  // map tasks to taskList
   const taskList = tasks.map((task) => (
     <Todo
       id={task.id}
@@ -23,6 +24,7 @@ function App(props) {
     />
   ));
   
+  // handle heading text
   const taskNoun = taskList.length !== 1 ? "tasks" : "task";
   const headingText = `${taskList.length} ${taskNoun} remaining`;
 

@@ -3,10 +3,12 @@ import React, { useState } from "react";
 function Form(props) {
   const [name, setName] = useState("");
 
+  // when text changing, update name
   function handleChange(e) {
     setName(e.target.value);
   }
 
+  // submit & check
   function handleSubmit(e) {
     e.preventDefault();
     if (name==="") {
@@ -16,6 +18,7 @@ function Form(props) {
     }
     setName("");
   }
+
   return (
     <form onSubmit={handleSubmit}>
       <h2 className="label-wrapper">
