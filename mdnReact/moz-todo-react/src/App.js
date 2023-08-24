@@ -7,6 +7,7 @@ import FilterButton from "./components/FilterButton";
 // App
 function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
+  const [filter, setFilter] = useState("All");
 
   // add newTask to tasks
   function addTask(name) {
