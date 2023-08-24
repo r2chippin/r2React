@@ -148,7 +148,7 @@ body {
 /* END GLOBAL STYLES */
 .todoapp {
   background: #fff;
-  margin: 2rem 0 4rem 0;
+  margin: 1rem 0 0 0;
   padding: 1rem;
   position: relative;
   box-shadow:
@@ -292,4 +292,25 @@ body {
 }
 .c-cb > input[type="checkbox"]:checked + label::after {
   opacity: 1;
+}
+
+/*footer settings*/
+footer {
+  padding: 15px;
+  text-align: center;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
