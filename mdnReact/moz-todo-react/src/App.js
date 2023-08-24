@@ -28,6 +28,19 @@ function App(props) {
     setTasks(updatedTasks);
   }
 
+  // edit task name
+  function editTask(id, newName) {
+    const editedTasks = tasks.map((task) => {
+      // if this task has the same ID as the edited task
+      if (id === task.id) {
+        //
+        return { ...task, name: newName };
+      }
+      return task;
+    });
+    setTasks(editedTasks);
+  }
+
   // delete task
   function deleteTask(id) {
     const remainingTasks = tasks.filter((task) => id !== task.id);
@@ -42,6 +55,7 @@ function App(props) {
       completed={task.completed}
       key={task.id}
       toggleTaskCompleted={toggleTaskCompleted}
+      editTask={editTask}
       deleteTask={deleteTask}
     />
   ));
