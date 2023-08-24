@@ -10,7 +10,11 @@ export default function Todo(props) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    props.editTask(props.id, newName);
+    if (newName === "") {
+      alert("Can't be NULL")
+    } else {
+      props.editTask(props.id, newName);
+    }
     setNewName("");
     setEditing(false);
   }
