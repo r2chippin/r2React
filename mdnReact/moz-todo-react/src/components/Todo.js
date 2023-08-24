@@ -14,9 +14,9 @@ export default function Todo(props) {
       alert("Can't be NULL")
     } else {
       props.editTask(props.id, newName);
+      setNewName("");
+      setEditing(false);
     }
-    setNewName("");
-    setEditing(false);
   }
 
   // editing template
