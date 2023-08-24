@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# TodoMatic
+
+A Web Todo App made by mdn
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
