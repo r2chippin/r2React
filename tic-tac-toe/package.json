@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "nanoid": "^4.0.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "^5.0.0"
@@ -8,9 +9,9 @@
   "devDependencies": {
     "react-scripts": "1.0.0"
   },
-  "name": "vy6j3f",
-  "description": null,
-  "version": "0.0.0",
+  "name": "tic-tac-toe",
+  "description": "a sample react project",
+  "version": "0.0.1",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
